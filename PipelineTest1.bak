@@ -1,14 +1,12 @@
 node {  
     stage('Build') { 
         // 
-        checkout scm  //ÏÂÔØgit²Ö¿â´úÂë
         echo 'Build'
     }
     stage('Test') { 
         // 
         echo 'Test'
         bat 'robot -P D:\\PycharmProjects\\MyProject\\RFTest\\rf2\\ -t Test1 D:\\PycharmProjects\\MyProject\\RFTest\\rf2\\robotTest2.robot'
-        //sh 'echo "This is a test" >>text.txt'
     }
     stage('Deploy') { 
         // 
